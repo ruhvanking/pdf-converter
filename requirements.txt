@@ -1,0 +1,12 @@
+# Ruhvan PDF Converter & More - deployment notes
+# No build step. Pure static site - host the folder as-is on Netlify.
+#
+# Runtime libraries (loaded via CDN at page load, internet required):
+#   jsPDF   2.5.1  - Image->PDF & passport print sheet
+#   pdf-lib 1.17.1 - Merge PDFs
+#   pdf.js  3.11.174 - PDF -> Images
+#   JSZip   3.10.1 - Download-all ZIP
+#   Google Fonts - Bricolage Grotesque + Figtree
+#
+# Files to upload:
+#   index.html, netlify.toml, _headers
